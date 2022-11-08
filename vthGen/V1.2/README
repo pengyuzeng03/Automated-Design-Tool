@@ -1,0 +1,9 @@
+1. The file 'test.m’ is the testench,
+2. The file ‘VT.m’ is the main function to generate the variation map, 
+3. The file ‘correlation.m’ is the correlation function,
+4. The file ’visualization.m’ is to visualize the variation map. 
+5. There are two figures of the variation maps of 100x100 size in the folder ‘Spatial Correlation Generator)
+
+
+Problem remains to be solved: 
+the systematic variation is not symmetrical. 

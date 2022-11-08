@@ -1,0 +1,11 @@
+
+row = 128;
+col = 128;
+cellWid = 45;
+cellLen = 45;
+meanVol = 0.5;
+
+
+v = VT(row, col, cellWid, cellLen, meanVol, 0.001, 0.6, 0.1);
+
+range = max(v) - min(v);

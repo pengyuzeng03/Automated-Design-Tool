@@ -1,0 +1,4 @@
+.include './PTM/modelfiles/HP/16nm_HP.pm'
+.include './myPTM/pm/multiVth.pm'
+.include './work/weight.sp'
+.include './work/wl.sp'

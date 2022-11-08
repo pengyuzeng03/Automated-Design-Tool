@@ -1,0 +1,26 @@
+***********************************************************************************
+* USAGE:
+* Point to the models library file with the tags: PTM<NODE><TYPE>
+* where <NODE> = 16 / 22 / 32 / 45
+* and <TYPE> = hp / lp
+* Example: .lib '..PATH../PTM/models' ptm16hp
+* This will call the FETs for 20nm LSTP node.
+*
+* Transistor calls can be made as follows:
+* The param.inc file contains variables to calculate Effective Width and provide
+* nominal supply voltage.
+***********************************************************************************
+.LIB ptm45hp
+
+.subckt nmos d g s x
+.include './modelfiles/HP/45nm_HP.pm'
+mnmos d g s x nmos
+.ends nmos
+
+.subckt pmos d g s x
+.include './modelfiles/HP/45nm_HP.pm'
+mpmos d g s x pmos
+.ends pmos
+
+.ENDL ptm45hp
+***********************************************************************************
